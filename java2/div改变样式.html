@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>div改变样式</title>
+		<style type="text/css">
+			#div1{
+				width: 200px;
+				height: 200px;
+				background: red;
+			}
+		</style>
+		<script type="text/javascript">
+			function setstyle(name,value)
+			{
+				var odiv=document.getElementById('div1');
+				odiv.style[name]=value;
+			}
+		
+			// function towidth()
+			// {
+			// 	var odiv=document.getElementById('div1');
+			// 	odiv.style.width='400px';
+			// }
+			// function toheight()
+			// {
+			// 	var odiv=document.getElementById('div1');
+			// 	odiv.style.height='400px';
+			// }
+			// function togreen()
+			// {
+			// 	var odiv=document.getElementById('div1');
+			// 	odiv.style.background='green';
+			// }
+			
+		</script>
+	</head>
+	<body>
+		<input type="button" value="变宽" onclick="setstyle('width','400px')"/>
+		<input type="button" value="变高" onclick="setstyle('height','400px')"/>
+		<input type="button" value="变绿" onclick="setstyle('background','green')"/>
+		<div id="div1">
+			
+		</div>
+	</body>
+</html>
